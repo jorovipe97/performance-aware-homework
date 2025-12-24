@@ -9,6 +9,8 @@ import (
 	"strings"
 )
 
+// Details of the mov operation are after page 160 of 8086 user's manual
+
 // Reads an array of binary instructions and iterates over each instruction.
 type Decoder struct {
 	data []byte
