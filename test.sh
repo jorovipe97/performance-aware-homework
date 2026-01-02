@@ -1,8 +1,8 @@
-file=listing_0038_many_register_mov
-go run decoder/main.go $file
+file=listing_0039_more_movs
+go run main.go $file
 
 echo "Assemblying resulting file..."
-./nasm decoder/result.asm
+./nasm result.asm
 echo "Successful!"
 
 echo "Assemblying original file..."
@@ -10,4 +10,4 @@ echo "Assemblying original file..."
 echo "Succesfull!"
 
 echo "Comparing both binaries..."
-cmp listings/$file decoder/result
+cmp listings/$file result
