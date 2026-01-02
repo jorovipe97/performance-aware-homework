@@ -173,13 +173,13 @@ func main() {
 
 	fileName := os.Args[1]
 
-	// Get the absolute path to the executable
+	// Get the working directory
 	wd, err := os.Getwd()
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	path := filepath.Join(wd, "decoder", fileName)
+	path := filepath.Join(wd, "listings", fileName)
 	data, err := os.ReadFile(path)
 	if err != nil {
 		log.Fatal(err)

@@ -6,8 +6,8 @@ echo "Assemblying resulting file..."
 echo "Successful!"
 
 echo "Assemblying original file..."
-./nasm decoder/$file.asm
+./nasm listings/$file.asm
 echo "Succesfull!"
 
 echo "Comparing both binaries..."
-cmp decoder/$file decoder/result
+cmp listings/$file decoder/result
