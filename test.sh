@@ -1,4 +1,5 @@
 file=listing_0039_more_movs
+
 go run main.go $file
 
 echo "Assemblying resulting file..."
